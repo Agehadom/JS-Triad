@@ -7,6 +7,7 @@ JS Triad is a rhythm game built completely with ThreeJS, Angular and RhytmJS tha
 + HTML5
 + CSS
 + Javascript
++ Angular
 + Typescript
 + RhytmJS
 + ThreeJS
