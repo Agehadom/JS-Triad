@@ -1,10 +1,23 @@
 p {
     font-weight: 600;
     font-size: 24px;
+    text-align: center;
 }
 
 html, body {
+    display: flex;
+    flex-direction: column;
     height: 100%;
     width: 100%;
     margin: 0;
+}
+
+#scene-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 400px;
+    width: 400px;
+    /* background-color: aquamarine;
+    color: green; */
 }

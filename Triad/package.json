@@ -10,7 +10,6 @@
   },
   "private": true,
   "dependencies": {
-    "@angular-three/core": "^1.0.0-beta.41",
     "@angular/animations": "~12.1.0-",
     "@angular/common": "~12.1.0-",
     "@angular/compiler": "~12.1.0-",
@@ -19,7 +18,8 @@
     "@angular/platform-browser": "~12.1.0-",
     "@angular/platform-browser-dynamic": "~12.1.0-",
     "@angular/router": "~12.1.0-",
-    "@ngrx/component-store": "^12.3.0",
+    "@types/jquery": "^3.5.6",
+    "jquery": "^3.6.0",
     "rxjs": "~6.6.0",
     "three": "^0.130.1",
     "tslib": "^2.2.0",
