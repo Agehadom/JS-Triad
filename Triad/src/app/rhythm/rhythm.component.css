@@ -25,13 +25,6 @@ html, body {
     justify-content: center;
     height: 400px;
     width: 400px;
-    /* background-color: aquamarine;
-    color: green; */
-}
-
-.logger {
-    margin: 4px;
-    padding: 4px;
-    font-size: 48px;
-    text-align: center;
+    background-color: aquamarine;
+    color: green;
 }
