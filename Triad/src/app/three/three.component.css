@@ -25,8 +25,13 @@ html, body {
     justify-content: center;
     height: 400px;
     width: 400px;
+    border-radius: 4px;
     /* background-color: aquamarine;
     color: green; */
+}
+
+canvas {
+    border-style: none;
 }
 
 .logger {

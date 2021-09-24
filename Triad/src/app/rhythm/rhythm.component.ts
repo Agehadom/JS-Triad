@@ -23,6 +23,8 @@ export class RhythmComponent implements OnInit {
   ngOnInit() {
     const container = this.elementRef.nativeElement.querySelector('.scenecontainer')
 
+    // var rythm = new Rythm()
+
     // const heat = require('../../assets/audio/heatwaveloop.mp3')
 
     // audioFile.play()

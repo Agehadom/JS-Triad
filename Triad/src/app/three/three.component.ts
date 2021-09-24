@@ -1,4 +1,4 @@
-import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, Inject, Directive, Input } from '@angular/core';
+import { Component, OnInit, ElementRef, ViewChild, AfterViewInit, AfterContentInit, AfterContentChecked, Inject, Directive, Input } from '@angular/core';
 import { DOCUMENT } from '@angular/common';
 import * as THREE from 'three';
 import { AmbientLight, BoxBufferGeometry, Color, Mesh, MeshBasicMaterial, PCFShadowMap, PerspectiveCamera, Scene, SpotLight, sRGBEncoding, WebGLRenderer } from 'three';
@@ -19,7 +19,7 @@ import { AmbientLight, BoxBufferGeometry, Color, Mesh, MeshBasicMaterial, PCFSha
   styleUrls: ['./three.component.css']
 })
 
-export class ThreeComponent implements OnInit, AfterViewInit {
+export class ThreeComponent implements OnInit, AfterViewInit, AfterContentInit {
 
   constructor(private elementRef:ElementRef) {
 
@@ -40,13 +40,13 @@ export class ThreeComponent implements OnInit, AfterViewInit {
     
   }
 
-  ngAfterViewInit() {
+  ngAfterContentInit() {
   
     const container = this.elementRef.nativeElement.querySelector('.scenecontainer')
 
     const logger = this.elementRef.nativeElement.querySelector('.logger')
 
-    console.log("This is After the view is initiated.");
+    console.log("This is After the content is initiated.");
     console.log(this);
     
     const scene = new Scene();
@@ -134,6 +134,19 @@ export class ThreeComponent implements OnInit, AfterViewInit {
     }
 
     anim()
+  }
+
+  ngAfterViewInit() {
+
+    console.log('After View Init Printing.');
+
+    console.log(this.elementRef.nativeElement);
+    
+    this.elementRef.nativeElement.children[0].children[1].children[0].style.setProperty('border-style', 'inset')
+
+  }
+
+  ngAfterViewChecked() {
 
   }
 
